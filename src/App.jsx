@@ -17,6 +17,7 @@ import TimeNumbersPage from './app/11-time-numbers/page.jsx'
 import ComplexSentencesPage from './app/12-complex-sentences/page.jsx'
 import AdvancedVerbsPage from './app/13-advanced-verbs/page.jsx'
 import ComplexDialoguePage from './app/14-complex-dialogue/page.jsx'
+import TestNotionPage from './app/test-notion/page.jsx'
 
 // Import 01-getting-started lesson pages
 import GreetingsIdentityPage from './app/01-getting-started/greetings-identity/page.jsx'
@@ -132,6 +133,9 @@ function App() {
         <Route path="/05-plurals/neuter-they" element={<RootLayout><NeuterTheyPage /></RootLayout>} />
         <Route path="/05-plurals/plural-verbs" element={<RootLayout><PluralVerbsPage /></RootLayout>} />
         <Route path="/05-plurals/how-many" element={<RootLayout><HowManyPage /></RootLayout>} />
+        
+        {/* Test Notion Integration */}
+        <Route path="/test-notion" element={<RootLayout><TestNotionPage /></RootLayout>} />
         
       </Routes>
     </Router>

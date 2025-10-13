@@ -3,43 +3,56 @@ import ExplanationCard from '@/components/cards/ExplanationCard'
 import ImageCard from '@/components/cards/ImageCard'
 import QuizCard from '@/components/cards/QuizCard'
 import { getLessonNavigation } from '@/lib/navigation'
+import { useLesson } from '@/hooks/useLesson'
 
 export default function GreetingsIdentityPage() {
   const navigation = getLessonNavigation('/01-getting-started/greetings-identity');
+  const { lesson, loading, error } = useLesson('1'); // Use lesson ID 1 from Notion
   
+  if (loading) return <div>Loading lesson from Notion...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!lesson) return <div>No lesson found</div>;
+
   return (
     <div className="space-y-4">
       {/* Chapter & Title Card */}
       <ChapterTitleCard 
         {...navigation}
-        title="1.1 - Greetings and Identity"
-        subtitle="Basic greetings and introducing yourself in Sanskrit"
-        level="Beginner"
-        progress={50}
+        title={lesson.content?.title || "1.1 - Greetings and Identity"}
+        subtitle={lesson.content?.subtitle || "Basic greetings and introducing yourself in Sanskrit"}
+        level={lesson.content?.level || "Beginner"}
+        progress={lesson.content?.progress || 50}
       />
       
       {/* Vocabulary and Goal Card */}
-      <ExplanationCard 
-        title="Goal and Vocabulary"
-        content="<p>Learn essential Sanskrit greetings and how to introduce yourself. These are the building blocks of Sanskrit conversation.</p>"
-        examples={[
-          { sanskrit: "namaste (नमस्ते)", english: "Hello, greetings" },
-          { sanskrit: "Namo Namah", english: "Salutations" },
-        ]}
-        tips="Remember: Sanskrit has different forms for Salutations."
-      />
+      {lesson.content?.goalAndVocabulary && (
+        <ExplanationCard 
+          title={lesson.content.goalAndVocabulary.title}
+          content={lesson.content.goalAndVocabulary.content}
+          examples={lesson.content.goalAndVocabulary.examples || []}
+          tips={lesson.content.goalAndVocabulary.tips}
+        />
+      )}
+      
+      {/* Tips Card */}
+      {lesson.content?.tips && (
+        <ExplanationCard 
+          title={lesson.content.tips.title}
+          content={lesson.content.tips.content}
+          examples={lesson.content.tips.examples || []}
+          tips={lesson.content.tips.tips}
+        />
+      )}
       
       {/* Example Dialogue Card */}
-      <ExplanationCard 
-        title="Example Dialogue"
-        content="<p>Here's how a typical introduction conversation would go in Sanskrit:</p>"
-        examples={[
-          { sanskrit: "Person A: namaste!", english: "Hello!" },
-          { sanskrit: "Person B: namaste! mama nāma rāmaḥ. tava nāma kim?", english: "Hello! My name is Rama. What is your name?" },
-          { sanskrit: "Person A: mama nāma sītā.", english: "My name is Sita." }
-        ]}
-        tips="Notice how 'mama nāma' means 'my name' and 'tava nāma' means 'your name'. The word order is flexible in Sanskrit."
-      />
+      {lesson.content?.exampleDialogue && (
+        <ExplanationCard 
+          title={lesson.content.exampleDialogue.title}
+          content={lesson.content.exampleDialogue.content}
+          examples={lesson.content.exampleDialogue.examples || []}
+          tips={lesson.content.exampleDialogue.tips}
+        />
+      )}
       
       {/* Image Card for Practice */}
       <ImageCard 

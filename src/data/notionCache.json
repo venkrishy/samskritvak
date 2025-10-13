@@ -1,0 +1,542 @@
+{
+  "lastSync": "2025-10-09T02:05:41.102Z",
+  "version": "1.0.0",
+  "lessons": {
+    "greetings_and_identity": {
+      "lessonId": "greetings_and_identity",
+      "title": "Greetings and Identity",
+      "url": "https://www.notion.so/Greetings-and-Identity-2860403de4c380398e97f69bfb59f4db",
+      "createdTime": "2025-10-08T04:14:00.000Z",
+      "lastModified": "2025-10-08T04:15:00.000Z",
+      "content": {
+        "title": "Greetings and Identity",
+        "subtitle": "Learning essential concepts",
+        "level": "Beginner",
+        "progress": 50,
+        "goalAndVocabulary": {
+          "title": "Goal and Vocabulary",
+          "content": "<p>Learn essential Sanskrit greetings.</p>",
+          "examples": [],
+          "tips": ""
+        },
+        "tips": {
+          "title": "Tips",
+          "content": "<p>Practice daily for best results. </p>",
+          "tips": []
+        },
+        "exampleDialogue": null,
+        "image": null,
+        "quiz": []
+      },
+      "rawBlocks": [
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-80a8-8027-f27f90ccaba7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Goal and Vocabulary - DIRECT FROM PAGE",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Goal and Vocabulary - DIRECT FROM PAGE",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-800e-a703-e1311180d58e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Learn essential Sanskrit greetings.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Learn essential Sanskrit greetings.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-808d-8419-c3fb67fa4ad4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Tips",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Tips",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-800c-8982-cfa2e6b15498",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Practice daily for best results. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Practice daily for best results. ",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-8039-af9a-f0f5f40299ac",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-80ca-8e28-ecebfbd48d4c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "MORE TIPS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "MORE TIPS",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-8021-a3ad-fa5c4edb510e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-8039-8e97-f69bfb59f4db"
+          },
+          "created_time": "2025-10-08T04:15:00.000Z",
+          "last_edited_time": "2025-10-08T04:15:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    "basic_conversations": {
+      "lessonId": "basic_conversations",
+      "title": "Basic Conversations",
+      "url": "https://www.notion.so/Basic-Conversations-2860403de4c3801b9a22d607e48f0a3c",
+      "createdTime": "2025-10-08T04:16:00.000Z",
+      "lastModified": "2025-10-09T02:03:00.000Z",
+      "content": {
+        "title": "Basic Conversations",
+        "subtitle": "Learning essential concepts",
+        "level": "Beginner",
+        "progress": 50,
+        "goalAndVocabulary": {
+          "title": "Goal and Vocabulary",
+          "content": "<p>Checking out Basic Conversations</p>",
+          "examples": [],
+          "tips": ""
+        },
+        "tips": {
+          "title": "Tips",
+          "content": "<p>Practice daily for best results for improving Basic Conversations</p>",
+          "tips": []
+        },
+        "exampleDialogue": null,
+        "image": null,
+        "quiz": []
+      },
+      "rawBlocks": [
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-802d-95d8-c5e7e85765cc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-801b-9a22-d607e48f0a3c"
+          },
+          "created_time": "2025-10-08T04:16:00.000Z",
+          "last_edited_time": "2025-10-09T02:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Goal and Vocabulary test content",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Goal and Vocabulary test content",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-8001-b309-e7857377ae36",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-801b-9a22-d607e48f0a3c"
+          },
+          "created_time": "2025-10-08T04:16:00.000Z",
+          "last_edited_time": "2025-10-08T04:16:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Checking out Basic Conversations",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Checking out Basic Conversations",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-80b0-8a98-e771b6036271",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-801b-9a22-d607e48f0a3c"
+          },
+          "created_time": "2025-10-08T04:16:00.000Z",
+          "last_edited_time": "2025-10-08T04:16:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Tips",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Tips",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-809d-997c-fdd958e4d473",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-801b-9a22-d607e48f0a3c"
+          },
+          "created_time": "2025-10-08T04:16:00.000Z",
+          "last_edited_time": "2025-10-08T04:16:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Practice daily for best results for improving Basic Conversations",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Practice daily for best results for improving Basic Conversations",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2860403d-e4c3-80de-a0e2-ecb63fb3675e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "2860403d-e4c3-801b-9a22-d607e48f0a3c"
+          },
+          "created_time": "2025-10-08T04:16:00.000Z",
+          "last_edited_time": "2025-10-08T04:16:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0ea228b9-b086-4b42-a901-d1862e8f9598"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          }
+        }
+      ]
+    }
+  }
+}
