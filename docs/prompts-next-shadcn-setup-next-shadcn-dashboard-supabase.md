@@ -145,8 +145,7 @@ npm install @supabase/ssr @supabase/supabase-js
 Create a `.env.local` file in your project root:
 ```bash
 NEXT_PUBLIC_SUPABASE_URL="https://xyzcompany.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="public-anon-key"
-SUPABASE_SERVICE_ROLE_KEY="service-role-key"
+NEXT_SUPABASE_PUBLISHABLE_KEY="your-publishable-key"
 ```
 
 Update the values with your actual Supabase credentials.
@@ -161,8 +160,7 @@ import { createBrowserClient } from "@supabase/ssr";
 export function createClient() {
   return createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
+    process.env.NEXT_SUPABASE_PUBLISHABLE_KEY!  );
 }
 ```
 
@@ -177,9 +175,7 @@ import { cookies } from "next/headers";
 export function createServerSupabaseClient() {
   const cookieStore = cookies();
 
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  process.env.NEXT_SUPABASE_PUBLISHABLE_KEY!,
     {
       cookies: {
         getAll() {
@@ -216,7 +212,7 @@ export async function middleware(request: NextRequest) {
   // Create server client with SSR cookie management.
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.NEXT_SUPABASE_PUBLISHABLE_KEY!,
     {
       cookies: {
         getAll() {

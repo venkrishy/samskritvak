@@ -1,6 +1,6 @@
 import { useAuth } from '@/context/AuthContext'
 
-export default function LoginModal({ open, onClose }) {
+export default function LoginModal({ open, onClose, redirectPath = '/dashboard' }) {
   if (!open) return null;
   const { signInWithGoogle } = (() => { try { return useAuth() } catch { return {} } })()
   return (
@@ -8,12 +8,12 @@ export default function LoginModal({ open, onClose }) {
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
       <div className="relative z-10 w-full max-w-sm rounded-lg bg-white p-6 shadow-lg">
         <div className="mb-4 text-center">
-          <h2 className="text-2xl font-bold text-gray-900">Log in to Samskritavak</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Log in to BhashaBoli</h2>
           <p className="text-sm text-gray-600">Sign in with your Google account</p>
         </div>
         <div className="space-y-3">
           <button
-            onClick={signInWithGoogle}
+            onClick={() => signInWithGoogle(redirectPath)}
             className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-black"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="h-5 w-5" aria-hidden>

@@ -15,15 +15,39 @@
 - Implement Account preferences page.
 - Implement Theme switcher (Light/Dark/System).
 
-## Supabase setup checklist
+## Environment Variables
 
-1. Enable Google provider in Dashboard → Authentication → Providers → Google → Enable
-2. Add redirect URLs in Authentication → URL Configuration:
-   - http://localhost:5173
-   - http://localhost:5173/dashboard
-3. Create .env.local with:
-   - VITE_SUPABASE_URL=https://nmiempiktmxemijobzik.supabase.co
-   - VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+This project uses environment variables to configure the application. You will need to create two files, `.env` and `.env.local`, in the root of the project.
+
+### `.env`
+
+This file should contain variables that are safe to be committed to the repository. You can copy the `env.example` file to create it:
+
+```bash
+cp env.example .env
+```
+
+### `.env.local`
+
+This file should contain sensitive information and is not meant to be committed to the repository. Create a file named `.env.local` in the root of the project and add the following content:
+
+```
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_URL=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+
+# Notion
+NOTION_INTEGRATION_TOKEN=
+
+# R2
+R2_ENDPOINT=
+R2_ACCESS_KEY_ID=
+R2_SECRET_ACCESS_KEY=
+```
+
+You will need to fill in the values for the variables in both files. The comments in the example files explain what each variable is for.
 # Sanskrit Learning App
 
 A comprehensive single-page application for learning Sanskrit, built with React and Vite. The app provides structured lessons organized by curriculum categories, with proper Sanskrit typography and interactive navigation.

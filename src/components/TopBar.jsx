@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '@/context/AuthContext'
 import { Button } from '@/components/ui/button'
@@ -18,8 +18,26 @@ export default function TopBar({ onToggleToc, onTogglePractice }) {
 
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const dropdownRef = useRef(null)
 
   const isActive = (pathStarts) => pathStarts.some((p) => location.pathname.startsWith(p))
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setMenuOpen(false)
+      }
+    }
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [menuOpen])
 
   return (
     <div className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -72,14 +90,49 @@ export default function TopBar({ onToggleToc, onTogglePractice }) {
               Practice
             </Button>
             {user && (
-              <div className="relative">
+              <div className="relative" ref={dropdownRef}>
                 <button onClick={() => setMenuOpen(v => !v)} className="focus:outline-none">
-                  <img src={user?.user_metadata?.avatar_url} alt="avatar" className="h-8 w-8 rounded-full border-2 border-white shadow-md" />
+                  {(() => {
+                    const meta = user?.user_metadata || {}
+                    // Common locations for Google avatar
+                    const candidateUrls = [
+                      meta.avatar_url,
+                      meta.picture,
+                      meta.avatar,
+                      meta.photoURL,
+                      meta.image_url,
+                      // Supabase identity payload sometimes stored in identities
+                      user?.identities?.[0]?.identity_data?.avatar_url,
+                      user?.identities?.[0]?.identity_data?.picture,
+                    ].filter(Boolean)
+                    const src = candidateUrls[0]
+                    return src ? (
+                      <img 
+                        src={src} 
+                        alt="avatar" 
+                        className="h-8 w-8 rounded-full border-2 border-white shadow-md" 
+                        onError={(e) => {
+                          e.target.style.display = 'none'
+                          e.target.nextSibling.style.display = 'flex'
+                        }}
+                      />
+                    ) : null
+                  })()}
+                  <div 
+                    className={`h-8 w-8 rounded-full border-2 border-white shadow-md bg-blue-600 flex items-center justify-center ${user?.user_metadata?.avatar_url ? 'hidden' : 'flex'}`}
+                    style={{ display: (user?.user_metadata?.avatar_url || user?.user_metadata?.picture || user?.identities?.[0]?.identity_data?.avatar_url) ? 'none' : 'flex' }}
+                  >
+                    <span className="text-white text-sm font-medium">
+                      {user?.user_metadata?.full_name?.charAt(0) || user?.email?.charAt(0) || 'U'}
+                    </span>
+                  </div>
                 </button>
                 {menuOpen && (
                   <div className="absolute right-0 mt-2 w-64 rounded-xl border bg-white shadow-xl z-50">
                     <div className="px-4 py-3 border-b bg-gray-50 rounded-t-xl">
-                      <div className="text-sm font-medium text-gray-900">{user?.user_metadata?.name || 'Account'}</div>
+                      <div className="text-sm font-medium text-gray-900">
+                        {user?.user_metadata?.full_name || user?.user_metadata?.name || 'Account'}
+                      </div>
                       <div className="text-xs text-gray-500 truncate">{user?.email}</div>
                     </div>
                     <div className="py-2">

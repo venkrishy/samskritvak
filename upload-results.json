@@ -1,0 +1,139 @@
+{
+  "timestamp": "2025-10-18T01:02:35.721Z",
+  "total_images": 13,
+  "successful_uploads": 13,
+  "failed_uploads": 0,
+  "uploaded_images": [
+    {
+      "filename": "business-case-study.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/business-case-study.jpg",
+      "category": "illustration",
+      "page": "business",
+      "alt_text": "Business case study illustration",
+      "description": "Illustration for business case studies",
+      "file_size": 107361,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "business-hero.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/business-hero.jpg",
+      "category": "hero",
+      "page": "business",
+      "alt_text": "Corporate language training",
+      "description": "Hero image for business training page",
+      "file_size": 108662,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "hero-student-learning.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/hero-student-learning.jpg",
+      "category": "hero",
+      "page": "homepage",
+      "alt_text": "Students learning languages with tutors online",
+      "description": "Hero image showing diverse students learning with online tutors",
+      "file_size": 101080,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "progress-dashboard.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/progress-dashboard.jpg",
+      "category": "screenshot",
+      "page": "proven-progress",
+      "alt_text": "Learning progress dashboard",
+      "description": "Screenshot of learning progress dashboard",
+      "file_size": 134874,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "progress-stats.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/progress-stats.jpg",
+      "category": "infographic",
+      "page": "proven-progress",
+      "alt_text": "Learning statistics infographic",
+      "description": "Infographic showing learning statistics",
+      "file_size": 137676,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "stats-background.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/stats-background.jpg",
+      "category": "background",
+      "page": "homepage",
+      "alt_text": "Abstract gradient background",
+      "description": "Background image for stats section",
+      "file_size": 71701,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "teach-benefits.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/teach-benefits.jpg",
+      "category": "illustration",
+      "page": "teach",
+      "alt_text": "Teaching benefits illustration",
+      "description": "Illustration showing benefits of teaching online",
+      "file_size": 106643,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "teach-hero.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/teach-hero.jpg",
+      "category": "hero",
+      "page": "teach",
+      "alt_text": "Tutor teaching online",
+      "description": "Hero image for become a tutor page",
+      "file_size": 104514,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "testimonial-avatar-1.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/testimonial-avatar-1.jpg",
+      "category": "avatar",
+      "page": "homepage",
+      "alt_text": "Krista A. - English tutor",
+      "description": "Profile photo of English tutor Krista A.",
+      "file_size": 233020,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "testimonial-avatar-2.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/testimonial-avatar-2.jpg",
+      "category": "avatar",
+      "page": "homepage",
+      "alt_text": "Maria S. - Spanish student",
+      "description": "Profile photo of Spanish student Maria S.",
+      "file_size": 204047,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "tutor-placeholder-1.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/tutor-placeholder-1.jpg",
+      "category": "tutor",
+      "page": "tutors",
+      "alt_text": "Tutor profile photo",
+      "description": "Placeholder image for tutor profiles",
+      "file_size": 170106,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "tutor-placeholder-2.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/tutor-placeholder-2.jpg",
+      "category": "tutor",
+      "page": "tutors",
+      "alt_text": "Tutor profile photo",
+      "description": "Placeholder image for tutor profiles",
+      "file_size": 195442,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "filename": "tutor-placeholder-3.jpg",
+      "url": "https://pub-2d36cb8692e14028b7ad2e33e6fc99d0.r2.dev/images/tutor-placeholder-3.jpg",
+      "category": "tutor",
+      "page": "tutors",
+      "alt_text": "Tutor profile photo",
+      "description": "Placeholder image for tutor profiles",
+      "file_size": 232852,
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "errors": []
+}

@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { supabase } from '@/lib/supabaseClient'
+import { supabase } from '@/lib/supabase'
 
 const AuthContext = createContext(null)
 
@@ -51,14 +51,42 @@ export function AuthProvider({ children }) {
 
   const user = session?.user ?? null
 
-  const signInWithGoogle = async () => {
-    await supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + '/dashboard' } })
+  const signInWithGoogle = async (redirectPath = '/courses/sanskrit') => {
+    await supabase.auth.signInWithOAuth({ 
+      provider: 'google', 
+      options: { 
+        redirectTo: window.location.origin + redirectPath 
+      } 
+    })
   }
 
 
   const signOut = async () => {
-    await supabase.auth.signOut()
-    window.location.href = '/'
+    try {
+      // Server-side sign out
+      await supabase.auth.signOut()
+    } catch (err) {
+      console.warn('Supabase signOut error (ignored):', err)
+    } finally {
+      try {
+        // Clear any local session remnants
+        localStorage.removeItem('supabase.auth.token')
+        localStorage.removeItem('sb-\n'+(supabase?.supabaseKey||''))
+      } catch {}
+      try {
+        sessionStorage.clear()
+      } catch {}
+      try {
+        // Best-effort cookie clear for localhost dev
+        document.cookie.split(';').forEach(c => {
+          const eqPos = c.indexOf('=')
+          const name = eqPos > -1 ? c.substr(0, eqPos) : c
+          document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'
+        })
+      } catch {}
+      // Hard redirect to home to ensure fresh state
+      window.location.replace('/')
+    }
   }
 
   const value = useMemo(() => ({ session, user, loading, signInWithGoogle, signOut }), [session, user, loading])

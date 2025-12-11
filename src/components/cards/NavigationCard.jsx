@@ -1,3 +1,14 @@
+/**
+ * @deprecated This component is deprecated and should not be used.
+ * Use ChapterTitleCard instead for lesson page headers and navigation.
+ * 
+ * NavigationCard was designed for chapter overview pages but was incorrectly
+ * used in lesson pages, causing layout issues. ChapterTitleCard provides
+ * the correct lesson-focused navigation and styling.
+ * 
+ * @deprecated_since 2024-12-19
+ * @replacement ChapterTitleCard
+ */
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
